@@ -13,11 +13,11 @@ class App < Sinatra::Base
     end
 
     post "/team" do
-    @pirate = Pirate.new(params[:pirate])
-    params[:pirate][:ships].each do |item|
-      Ship.new(item)
+    @team = Team.new(params[:team])
+    params[:team][:superheros].each do |item|
+      SuperHero.new(item)
     end
-    @ships = Ship.all
+    @superhero = SuperHero.all
 
     erb :team
 
