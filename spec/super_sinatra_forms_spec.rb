@@ -9,10 +9,10 @@ describe App do
       expect(last_response.status).to eq(200)
     end
 
-    #it 'renders super hero form' do
-    #  expect(last_response.body).to include("Create a Team and Heroes!")
-    #  expect(last_response.body).to include("<form")
-  #  end
+    it 'renders super hero form' do
+      expect(last_response.body).to include("Create a Team and Heroes!")
+      expect(last_response.body).to include("<form")
+    end
   end
 
   describe 'POST /teams' do
