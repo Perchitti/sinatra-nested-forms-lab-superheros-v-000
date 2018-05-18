@@ -13,7 +13,7 @@ describe App do
     #  expect(last_response.body).to include("Create a Team and Heroes!")
     #  expect(last_response.body).to include("<form")
   #  end
-  #end
+  end
 
   describe 'POST /teams' do
     it 'submits the form' do
